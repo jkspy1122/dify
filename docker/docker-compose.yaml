@@ -619,7 +619,7 @@ services:
       ENABLE_WEBSITE_JINAREADER: ${ENABLE_WEBSITE_JINAREADER:-true}
       ENABLE_WEBSITE_FIRECRAWL: ${ENABLE_WEBSITE_FIRECRAWL:-true}
       ENABLE_WEBSITE_WATERCRAWL: ${ENABLE_WEBSITE_WATERCRAWL:-true}
-      labels:
+    labels:
       - traefik.enable=true
       - traefik.http.routers.dify-web-home.rule=Host(`${DOMAIN_URL}`)
       - traefik.http.routers.dify-web-home.tls=true
