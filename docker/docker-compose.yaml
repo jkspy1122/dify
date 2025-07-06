@@ -1198,6 +1198,8 @@ services:
       - ./volumes/unstructured:/app/data
 
 networks:
+  dokploy-network:
+    external: true
   # create a network between sandbox, api and ssrf_proxy, and can not access outside.
   ssrf_proxy_network:
     driver: bridge
